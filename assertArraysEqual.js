@@ -1,3 +1,8 @@
+// Function that asserts similarity between two arrays
+// Rather than comparing the boolean output of eqArrays to an 'expected' boolean, 
+// the console.log calls are conditionally executed based on the boolean output of 
+// of the eqArrays function. The output is dependent on the boolean true or false 
+// output and not on the comparison of two bollean values. 
 
 const assertArraysEqual = function(arr1, arr2) {
   if(eqArrays(arr1, arr2)) {
