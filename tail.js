@@ -18,4 +18,4 @@ assertEqual(result.length, 2); // ensure we get back two elements
 assertEqual(result[0], "Lighthouse"); // ensure first element is "Lighthouse"
 assertEqual(result[1], "Labs"); // ensure second element is "Labs"
 
-// Test Case 2:
+// Test Case 2: Check if original array is unmodified
