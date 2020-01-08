@@ -76,11 +76,8 @@ const flatten = function(inputArr) {
     else{
       result.push(inputArr[i]);
     }
-    
-
   }
   return result;
-
 }
 
 

@@ -44,13 +44,10 @@ const middle = function(array) {
 
 
 const without = function(source , remove) {
-  // Create new empty array to be populated with valid inputs from source
-  // Valid inputs are inputs not present in the remove array
   let result = [];
   let status = true;
 
-  //Compare each value of source to remove array and write value to result if valid 
-  for(let i = 0; i <= source.length - remove.length + 1; i++) {
+  for(let i = 0; i <= source.length; i++) {
     status = true;
     for(let j = 0; j < remove.length; j++) {
       if(source[i] === remove[j]) {
@@ -62,10 +59,7 @@ const without = function(source , remove) {
     }
     
   }
-  console.log('IN WITHOUT FUNCTION: OUTPUT LENGTH = ' + result.length)
-  console.log(result);
   return result;
-
 };
 
 console.log('TEST 1')
