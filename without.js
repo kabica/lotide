@@ -57,7 +57,7 @@ const without = function(source , remove) {
         status = false;
       }
     }
-    if(status) {
+    if(status && source[i] !== undefined) {
       result.push(source[i]);
     }
     
