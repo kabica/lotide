@@ -9,5 +9,5 @@ const takeUntil = function(array, callback) {
 
 
 const data1 = [0,0,0,1,0,2];
-const results1 = takeUntil(data1, x => x ? 1 : x);
+const results1 = takeUntil(data1, x => x);
 console.log(results1);
