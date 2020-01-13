@@ -47,14 +47,23 @@ const eqObjects = function(object1 , object2) {
 // END ---------------------------------------------------------------------- IMPLIMENTATION //
 
 
+let eqObj = function(obj1, obj2) {
+ 
+  for(const index in obj1) {
+    
+
+  }
+  
+}
 
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-eqObjects(cd, dc); // => true
+
+const cd = { c: "1", d: "2" };
+const dc = { d: "2", c: "1" };
+//eqObjects(cd, dc); // => true
 
 const cd2 = { c: "1", d: ["2", 3, 4] };
-eqObjects(cd, cd2); // => false
-assertEqual(eqObjects(cd, dc),true);
-assertEqual(eqObjects(cd, cd2),false);
+//eqObjects(cd, cd2); // => false
+assertEqual(eqObj(cd, dc),true);
+assertEqual(eqObj(cd, cd2),false);
 
