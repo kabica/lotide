@@ -26,6 +26,20 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-* `function1(...)`: description
-* `function2(...)`: description
-* `function3(...)`: description
+* `assertEqual(...)`: console logs equality assertions using ( === )
+* `head(...)`: returns starting element of array 
+* `tail(...)`: returns array with first element of input removed 
+* `eqArrays(...)`: returns boolean for deep equal of two arrays 
+* `assertArraysEqual(...)`: console logs equality assertions using ( eqArrays )
+* `middle(...)`: returns middle element(s) of an array 
+* `without(...)`: returns a new array with a specified value removed
+* `flatten(...)`: returns new one-dimensional array based on nested input
+* `countOnly(...)`: returns the occurance count of a specified value  
+* `countLetters(...)`: returns the occurance count of each element from input  
+* `letterPositions(...)`: returns index of specified value within input 
+* `findKeyByValue(...)`: returns the key paired to a specified value 
+* `eqObjects(...)`: returns boolean for deep equal of two objects 
+* `assertObjectsEqual(...)`: console logs equality assertions using ( eqObjects )
+* `map(...)`: returns array populated with first character of each input array
+* `takeUntil(...)`: returns an array populated with values of input that occur before specified value 
+* `findKey(...)`: returns the first occuring key associated to a particular value 
