@@ -1,12 +1,4 @@
-// FUNCTION IMPLEMENTATION
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑 Assertion failed: ${actual} !== ${expected}`);
-  }
-
-};
+// eqArrays.js
 
 const eqArrays = function(arr1 , arr2) {
   // Check that arrays are of equal size -- allows for either array length to be used as for-loop max index
@@ -26,6 +18,6 @@ const eqArrays = function(arr1 , arr2) {
 
 };
 
+module.exports = eqArrays;
 
-// TEST FUNCTION 
-assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+
