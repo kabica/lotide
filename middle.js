@@ -1,24 +1,29 @@
-const eqArrays = function(arr1 , arr2) {
-  if(arr1.length !== arr2.length) return false;
-  let result = false;
+//const eqArrays = require('./eqArrays');
+//const assertArraysEqual = require('./assertArraysEqual');
 
-  for(let i = 0; i < arr1.length; i++) {
-    result = false;
-    if(arr1[i] === arr2[i]) {
-      result = true;
-    }
-  }
+
+
+// const eqArrays = function(arr1 , arr2) {
+//   if(arr1.length !== arr2.length) return false;
+//   let result = false;
+
+//   for(let i = 0; i < arr1.length; i++) {
+//     result = false;
+//     if(arr1[i] === arr2[i]) {
+//       result = true;
+//     }
+//   }
   
-  return result;
-};
+//   return result;
+// };
 
-const assertArraysEqual = function(arr1, arr2) {
-  if(eqArrays(arr1, arr2)) {
-    console.log('✅ Assertion passed: Arrays are equal')
-  } else {
-    console.log('🛑 Assertion failed: arrays are different')
-  }
-};
+// const assertArraysEqual = function(arr1, arr2) {
+//   if(eqArrays(arr1, arr2)) {
+//     console.log('✅ Assertion passed: Arrays are equal')
+//   } else {
+//     console.log('🛑 Assertion failed: arrays are different')
+//   }
+// };
 
 const middle = function(array) {
   let result = [];
@@ -41,11 +46,5 @@ const middle = function(array) {
   return result;
 };
 
-// TEST ASSERTION 
-assertArraysEqual(middle([1,2,3,4,5]) , [3]);      // SHOULD PASS ASSERTION
-assertArraysEqual(middle([1,2,3,4,5,6]) , [3,4]);  // SHOULD PASS ASSERTION
-assertArraysEqual(middle([1,2,3,4,5,6,7]) , [4]);  // SHOULD PASS ASSERTION 
+module.exports = middle;
 
-assertArraysEqual(middle([1]) , [3]);              // SHOULD FAIL ASSERTION 
-assertArraysEqual(middle([1,2]) , [3]);            // SHOULD FAIL ASSERTION
-assertArraysEqual(middle([1,2,3,4,5]) , [2,3,4]);  // SHOULD FAIL ASSERTION
