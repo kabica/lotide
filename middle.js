@@ -1,29 +1,4 @@
-//const eqArrays = require('./eqArrays');
-//const assertArraysEqual = require('./assertArraysEqual');
-
-
-
-// const eqArrays = function(arr1 , arr2) {
-//   if(arr1.length !== arr2.length) return false;
-//   let result = false;
-
-//   for(let i = 0; i < arr1.length; i++) {
-//     result = false;
-//     if(arr1[i] === arr2[i]) {
-//       result = true;
-//     }
-//   }
-  
-//   return result;
-// };
-
-// const assertArraysEqual = function(arr1, arr2) {
-//   if(eqArrays(arr1, arr2)) {
-//     console.log('✅ Assertion passed: Arrays are equal')
-//   } else {
-//     console.log('🛑 Assertion failed: arrays are different')
-//   }
-// };
+// middle.js
 
 const middle = function(array) {
   let result = [];
