@@ -3,8 +3,9 @@ const head   = require('./head');
 const tail   = require('./tail');
 const middle = require('./middle');
 
+// Shorthand notation implimented
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle
+  head,
+  tail,
+  middle
 };
